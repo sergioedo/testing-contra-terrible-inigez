@@ -9,12 +9,13 @@ export interface IEpisode {
 }
 
 export interface ITerribleEpisode {
-  number: string | number;
-  title: string;
+  number?: string | number;
+  title?: string;
   excerpt: string;
   published_at: number;
-  duration?: string;
+  duration?: string | number;
   id: string;
+  supercoco?: string | number;
 }
 
 export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
@@ -68,8 +69,9 @@ export const getTitlesBelow2Hours = (
 export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
   return {
     ...episode,
-    number: episode.number.toString(),
-    duration: episode.duration || "-1",
-    valid: episode.duration !== undefined,
+    title: episode?.title || "",
+    number: episode?.number?.toString() || "",
+    duration: episode?.duration?.toString() || "-1",
+    valid: episode.duration !== undefined && episode.number !== undefined,
   };
 };
