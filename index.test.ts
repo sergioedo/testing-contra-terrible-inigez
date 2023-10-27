@@ -1,17 +1,20 @@
 import { expect, test } from "bun:test";
-// import APIResponseMock from "./api-response-mock.json";
-import APIResponseMock from "./terrible-api-response-mock.json";
+import APIResponseMock from "./api-response-mock.json";
+import TerribleAPIResponseMock from "./terrible-api-response-mock.json";
 import {
   getNextEpisodeNumber,
   getTotalDuration,
   getShortestEpisodeNumber,
   getTitlesBelow2Hours,
+  parseEpisode,
 } from "./index";
+import { parse } from "url";
 
 const episodesMock = APIResponseMock.data;
 
 test("Next Episode", () => {
   expect(getNextEpisodeNumber(episodesMock)).toBe(267);
+  expect(getNextEpisodeNumber(TerribleAPIResponseMock)).toBe(266);
 });
 
 test("Total duration", () => {
