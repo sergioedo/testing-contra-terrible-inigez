@@ -5,6 +5,7 @@ export interface IEpisode {
   published_at: number;
   duration: string;
   id: string;
+  valid: boolean;
 }
 
 export interface ITerribleEpisode {
@@ -12,7 +13,7 @@ export interface ITerribleEpisode {
   title: string;
   excerpt: string;
   published_at: number;
-  duration: string;
+  duration?: string;
   id: string;
 }
 
@@ -68,5 +69,7 @@ export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
   return {
     ...episode,
     number: episode.number.toString(),
+    duration: episode.duration || "-1",
+    valid: episode.duration !== undefined,
   };
 };
