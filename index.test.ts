@@ -7,6 +7,7 @@ import {
   getShortestEpisodeNumber,
   getTitlesBelow2Hours,
   parseEpisode,
+  ITerribleEpisode,
 } from "./index";
 import { parse } from "url";
 
@@ -33,4 +34,30 @@ test("Titles < 2 hours", () => {
     .filter((e) => titlesBelow2H.includes(e.title))
     .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
   expect(totalDuration).toBeLessThan(2 * HOUR_IN_SECONDS);
+});
+
+test("Parse episode with number as number", () => {
+  const input: ITerribleEpisode = {
+    number: 265,
+    duration: "333",
+    title:
+      "WRP 265. Una casualidad y un colega te cambian la vida profesional para siempre con Miguel Barahona",
+    excerpt: "De programador desfasado a programador actualizado y satisfecho.",
+    published_at: 1695771354,
+    id: "0497df80970acdd20bdd802251b7fa02",
+  };
+  expect(parseEpisode(input).number).toBe(input.number.toString());
+});
+
+test("Parse episode with number as string", () => {
+  const input: ITerribleEpisode = {
+    number: "265",
+    duration: "333",
+    title:
+      "WRP 265. Una casualidad y un colega te cambian la vida profesional para siempre con Miguel Barahona",
+    excerpt: "De programador desfasado a programador actualizado y satisfecho.",
+    published_at: 1695771354,
+    id: "0497df80970acdd20bdd802251b7fa02",
+  };
+  expect(parseEpisode(input).number).toBe(input.number);
 });

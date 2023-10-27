@@ -7,6 +7,15 @@ export interface IEpisode {
   id: string;
 }
 
+export interface ITerribleEpisode {
+  number: string | number;
+  title: string;
+  excerpt: string;
+  published_at: number;
+  duration: string;
+  id: string;
+}
+
 export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
   // ordenar episodios por number
   const sortedEpisodes = episodes.toSorted(
@@ -53,4 +62,11 @@ export const getTitlesBelow2Hours = (
     }
   }
   return selectedTitles;
+};
+
+export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
+  return {
+    ...episode,
+    number: episode.number.toString(),
+  };
 };
