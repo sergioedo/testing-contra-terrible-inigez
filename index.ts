@@ -53,9 +53,13 @@ export const getTotalDuration = (episodes: Array<IEpisode>): number => {
 };
 
 export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
+  const validEpisodes = getValidEpisodes("getTotalDuration", episodes);
   // Encontrar el episode más corto
-  const shortestEpisode = episodes.reduce(
-    (shortest, ep) => (ep.duration < shortest.duration ? ep : shortest),
+  const shortestEpisode = validEpisodes.reduce(
+    (shortest, ep) =>
+      parseInt(ep.duration, 10) < parseInt(shortest.duration, 10)
+        ? ep
+        : shortest,
     episodes[0]
   );
   return parseInt(shortestEpisode.number);

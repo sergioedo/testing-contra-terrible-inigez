@@ -26,6 +26,7 @@ test("Total duration", () => {
 
 test("Shortest Episode", () => {
   expect(getShortestEpisodeNumber(episodesMock)).toBe(240);
+  expect(getShortestEpisodeNumber(terribleEpisodesMock)).toBe(262);
 });
 
 const HOUR_IN_SECONDS = 60 * 60;
