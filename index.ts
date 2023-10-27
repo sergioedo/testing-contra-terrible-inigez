@@ -7,7 +7,7 @@ export interface IEpisode {
   id: string;
 }
 
-export const getNextEpisodeNumber = (episodes: Array<IEpisode>) => {
+export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
   // ordenar episodios por number
   const sortedEpisodes = episodes.toSorted(
     (a, b) => parseInt(a.number, 10) - parseInt(b.number, 10)
@@ -20,7 +20,7 @@ export const getNextEpisodeNumber = (episodes: Array<IEpisode>) => {
   return nextEpisodeNumber;
 };
 
-export const getTotalDuration = (episodes: Array<IEpisode>) => {
+export const getTotalDuration = (episodes: Array<IEpisode>): number => {
   // Calcular la suma total de duration
   const totalDuration = episodes.reduce(
     (sum, ep) => sum + parseInt(ep.duration, 10),
@@ -29,7 +29,7 @@ export const getTotalDuration = (episodes: Array<IEpisode>) => {
   return totalDuration;
 };
 
-export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {
+export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
   // Encontrar el episode más corto
   const shortestEpisode = episodes.reduce(
     (shortest, ep) => (ep.duration < shortest.duration ? ep : shortest),
@@ -37,4 +37,8 @@ export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {
   );
   return parseInt(shortestEpisode.number);
 };
-export const getTitlesBelow2Hours = (episodes: Array<IEpisode>) => {};
+export const getTitlesBelow2Hours = (
+  episodes: Array<IEpisode>
+): Array<string> => {
+  return [];
+};

@@ -21,10 +21,12 @@ test("Shortest Episode", () => {
   expect(getShortestEpisodeNumber(episodesMock)).toBe(240);
 });
 
+const HOUR_IN_SECONDS = 60 * 60;
 test("Titles < 2 hours", () => {
-  const expectedTitles = [
-    "WRP 258. Plantilla para mejorar tu productividad basada en OKR",
-    "WRP 256. Artista de circo orquestando servicios en AWS con Camilo Nevot",
-  ];
-  expect(getTitlesBelow2Hours(episodesMock)).toBe(expectedTitles);
+  const titlesBelow2H: Array<string> = getTitlesBelow2Hours(episodesMock);
+  expect(titlesBelow2H.length).toBeGreaterThan(0);
+  const totalDuration = episodesMock
+    .filter((e) => titlesBelow2H.includes(e.title))
+    .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
+  expect(totalDuration).toBeLessThan(2 * HOUR_IN_SECONDS);
 });
