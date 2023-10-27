@@ -37,6 +37,7 @@ export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
   );
   return parseInt(shortestEpisode.number);
 };
+
 export const getTitlesBelow2Hours = (
   episodes: Array<IEpisode>
 ): Array<string> => {

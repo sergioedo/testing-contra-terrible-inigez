@@ -1,0 +1,320 @@
+{
+    "data": [
+        {
+            "excerpt": "Casos prácticos para entender y dar forma a la arquitectura más típica en web.",
+            "published_at": 1696460166,
+            "duration": 2558086972,
+            "id": "BNDv7ReKDZP2Gnrd9k/W6ADGpkPRj6Prl3nXR"
+        },
+        {
+            "number": 265,
+            "title": "WRP 265. Una casualidad y un colega te cambian la vida profesional para siempre con Miguel Barahona",
+            "excerpt": "De programador desfasado a programador actualizado y satisfecho.",
+            "published_at": 1695771354,
+            "id": "0497df80970acdd20bdd802251b7fa02",
+            "supercoco": 3723
+        },
+        {
+            "number": "264",
+            "excerpt": "Desmontamos algunas leyendas sobre la arquitectura decoupled",
+            "published_at": 1695168303,
+            "duration": "2534",
+            "id": "dda8b0137aa7e4ec5d72b6ee573c9011"
+        },
+        {
+            "number": 263,
+            "excerpt": "Preguntamos a un experto developer en node.js sobre las ventajas e inconvenientes de este lenguaje.",
+            "published_at": 1694563528,
+            "id": "BNDv7ReKDZP2Gnrd9k/Q8mBdwoPqmpPjxzZv6",
+            "supercoco": 4138140692
+        },
+        {
+            "number": 262,
+            "title": "WRP 262. SEO, bots, IA, programación nocturna y una gran respuesta de Pantic",
+            "excerpt": "Un paseo por la experiencia de un polifacético developer.",
+            "published_at": 1693958480,
+            "duration": "3578",
+            "id": "BNDv7ReKDZP2Gnrd9k/6NXAojnK00zK328DOe"
+        },
+        {
+            "title": "WRP 261. Mitos fritos sobre el testing de software",
+            "excerpt": "Desmontando mitos y leyendas sobre el desarrollo del software.",
+            "published_at": 1693353942,
+            "id": "BNDv7ReKDZP2Gnrd9k/5n6pvxVMndZJzk3Nd0"
+        },
+        {
+            "title": "WRP 260. Perseverar y programar: La experiencia en procesos de selección de José Manuel Gómez",
+            "excerpt": "Todo lujo de detalles sobre 3 meses de búsqueda de empleo en el sector de la programación.",
+            "published_at": 1692835555,
+            "id": "de7a5fdc8f3c1d4bae60437ff499b226"
+        },
+        {
+            "title": "WRP 259. Destapando Youtubers vendeburras",
+            "excerpt": "Encuentra formación de calidad en YouTube con unos buenos tips antihumo.",
+            "published_at": 1691453101,
+            "id": "BNDv7ReKDZP2Gnrd9k/E6jZv4pJN04MYdL723"
+        },
+        {
+            "excerpt": "Planifica tu próximo trimestre usando Notion y varios ejemplos efectivos.",
+            "published_at": 1690935025,
+            "duration": 2499,
+            "id": "ec236d0fee831d135a68ef0160b91f41"
+        },
+        {
+            "excerpt": "Servicio técnico, informática, mucha formación autodidacta y, finalmente, de vuelta a programar.",
+            "published_at": 1690329926,
+            "id": "BNDv7ReKDZP2Gnrd9k/5EvyWlXJL70Pg2mL9x"
+        },
+        {
+            "number": 256,
+            "excerpt": "Charlamos con un malandriner que sabe lo que es AWS y Meteor.js",
+            "published_at": 1689725430,
+            "id": "8056a5d9f754b9e99d341ab6b937b9fe"
+        },
+        {
+            "title": "WRP 255. Hazte Full Stack Developer en 30 días",
+            "excerpt": "Me aventuro a explorar el concepto de convertirse en un desarrollador Full Stack en solo 30 días.",
+            "published_at": 1689120040,
+            "id": "BNDv7ReKDZP2Gnrd9k/Z0EVDgbP1jvJnoqlw7"
+        },
+        {
+            "number": 254,
+            "title": "WRP 254. De punta en blanco (2ª parte)",
+            "excerpt": "Combinar el entretenimiento con la formación es la clave del futuro de Web Reactiva.",
+            "published_at": 1688536447,
+            "id": "a40c68e063fe2827881af662d19c5661",
+            "supercoco": 2452
+        },
+        {
+            "title": "WRP 253. En pelota picada (1ª parte)",
+            "excerpt": "La temporada 2022-23 al desnudo.",
+            "published_at": 1688380032,
+            "id": "BNDv7ReKDZP2Gnrd9k/ylr3anDKYR7Mwpz18O",
+            "supercoco": "2341"
+        },
+        {
+            "number": "252",
+            "excerpt": "Preguntas (algunas incómodas) para buscar estrategias en tu búsqueda de empleo.",
+            "published_at": 1687766807,
+            "duration": 2472,
+            "id": "54e87384406af518f8d541bff6a33e44"
+        },
+        {
+            "title": "WRP 251. Evaristo, fíate de la Inteligencia Artificial",
+            "excerpt": "Utilidad, limitaciones y un poco de ética sobre la Inteligencia Artificial.",
+            "published_at": 1687154301,
+            "id": "41dc8cd4d47733a88b9f16aed1cb323e",
+            "supercoco": 2169073746
+        },
+        {
+            "number": "250",
+            "excerpt": "Los libros de programación son una valiosa fuente de conocimiento que puede cambiar tu vida.",
+            "published_at": 1686701115,
+            "duration": 2583087822,
+            "id": "BNDv7ReKDZP2Gnrd9k/d6ZDQ91K8E4Mybk4B7"
+        },
+        {
+            "title": "WRP 249. Metiendo un pie en la piscina del Data Science con Javier Archeni",
+            "excerpt": "Muchas sorpresas y libros en un nuevo espectro de la tecnología.",
+            "published_at": 1686097047,
+            "id": "ff95fe1abd91a703eee77eb2c5f1bcee",
+            "supercoco": 4459151606
+        },
+        {
+            "title": "WRP 248. Tips de seguridad OWASP para developers con Érica Aguado",
+            "excerpt": "#SeguridadInformatica #ProgramaciónSegura #ResponsabilidadLegal #ControlDeAcceso #MonitorizaciónYRegistro",
+            "published_at": 1685491555,
+            "duration": 5209,
+            "id": "c9899a6402dea5209f250f0cd72fb83f"
+        },
+        {
+            "title": "WRP 247. Cómo empezar y deslumbrar con las PWA",
+            "excerpt": "Descubre las Progressive Web Apps: desafíos, consejos y desarrollo.",
+            "published_at": 1684886437,
+            "id": "BNDv7ReKDZP2Gnrd9k/D9gzxeoPArpJa2AOqd",
+            "supercoco": 2484
+        },
+        {
+            "excerpt": "Desmontando mitos de PHP: lenguaje pasado de moda o todavía relevante.",
+            "published_at": 1684280419,
+            "id": "BNDv7ReKDZP2Gnrd9k/BrVqRb1Pr7eJYnvZ9e",
+            "supercoco": 2994
+        },
+        {
+            "title": "WRP 245. Revisando refactoring.guru y Dive into refactoring",
+            "excerpt": "Refactoring.guru es una plataforma integral para aprender refactorización, ¿merece la pena comprarlo?",
+            "published_at": 1683871675,
+            "duration": 2344079696,
+            "id": "f1ab747abe86b22842070cbd0c6a67b0"
+        },
+        {
+            "number": 244,
+            "excerpt": "Tu mejor opción para seguir actualizado.",
+            "published_at": 1683099502,
+            "id": "4987ee0e550a666b6940502d09f45ab3"
+        },
+        {
+            "excerpt": "Organizamos el código en directorios.",
+            "published_at": 1682467505,
+            "id": "BNDv7ReKDZP2Gnrd9k/NOrl52qMdwnK34V1aj",
+            "supercoco": 2608
+        },
+        {
+            "excerpt": "Cómo desarrollar un documento de logros para potenciar la carrera profesional developer.",
+            "published_at": 1681862701,
+            "id": "BNDv7ReKDZP2Gnrd9k/BN3AV9zMagxJmZWwkQ",
+            "supercoco": 2566087244
+        },
+        {
+            "excerpt": "Este episodio se autodestruirá en…",
+            "published_at": 1681257950,
+            "id": "BNDv7ReKDZP2Gnrd9k/ledNQVjMvxvJLZRDGp",
+            "supercoco": 2825
+        },
+        {
+            "title": "WRP 240. La importancia de saber decir No",
+            "excerpt": "Una estrategia para lograr propósitos: Saying No.",
+            "published_at": 1680676252,
+            "duration": 1779060486,
+            "id": "9a5e11e6f466c952ab47632ac6a4948d"
+        },
+        {
+            "number": 239,
+            "excerpt": "Paneles de admin, dashboards, control panels… Nada se nos resistirá.",
+            "published_at": 1680048300,
+            "id": "ac323878bd440460e4f0c752b69bd524",
+            "supercoco": 3178108052
+        },
+        {
+            "number": "238",
+            "excerpt": "La minisaga continúa explorando el siguiente círculo de la arquitectura.",
+            "published_at": 1679443523,
+            "id": "BNDv7ReKDZP2Gnrd9k/y4j0VeYP6myMZnXDLw",
+            "supercoco": 3038
+        },
+        {
+            "number": 237,
+            "title": "WRP 237. Acabamos todos en el calabozo (el de verdad)",
+            "excerpt": "Los mastermind malandriners responden a la misma pregunta.",
+            "published_at": 1678863389,
+            "id": "BNDv7ReKDZP2Gnrd9k/O16yvLzPkQjKbmEVXe",
+            "supercoco": 2811
+        },
+        {
+            "title": "WRP 236. Mundo youtuber y realidad profesional con Javier Archeni",
+            "excerpt": "¿Se ha creado un estereotipo estético alrededor de la profesión del developer?",
+            "published_at": 1678320516,
+            "id": "4ad4dbd2423cc5aa30bcc61d5e3bd8db",
+            "supercoco": "4096"
+        },
+        {
+            "title": "WRP 235. Desplegar en producción: Estrategias Feature Flags y Expand-Contract",
+            "excerpt": "Tipos de despliegue y definición de los más efectivos.",
+            "published_at": 1677629119,
+            "id": "5521ea5bab1462104885ffbf92f146e9",
+            "supercoco": 3158107372
+        },
+        {
+            "excerpt": "Primer episodio de una minisaga para saltar de nivel",
+            "published_at": 1677110670,
+            "duration": 3174,
+            "id": "bc805cb2752752566bf2a103ef9e9428"
+        },
+        {
+            "excerpt": "Aprende a pasar un rato productivo con la IA de moda.",
+            "published_at": 1676420121,
+            "duration": 2683,
+            "id": "BNDv7ReKDZP2Gnrd9k/8oL7NBxPgX1J6zOXQY"
+        },
+        {
+            "number": "232",
+            "excerpt": "Fabulosas recomendaciones a coro.",
+            "published_at": 1675814992,
+            "id": "BNDv7ReKDZP2Gnrd9k/p8B45zGM3d7PkE3Rgj"
+        },
+        {
+            "excerpt": "Definimos todos los sistemas de renderizado posibles para una web.",
+            "published_at": 1675212462,
+            "id": "BNDv7ReKDZP2Gnrd9k/de1lYLyJVYrPAoxWrb",
+            "supercoco": 3213109242
+        },
+        {
+            "title": "WRP 230. Preguntas y respuestas sobre Python con Imanol Valero",
+            "excerpt": "Todo lo que necesitas saber sobre Python y que se puede contar con código.",
+            "published_at": 1674631937,
+            "id": "BNDv7ReKDZP2Gnrd9k/BNDv7ReKDO6J2Gnrd9"
+        },
+        {
+            "excerpt": "Qué es un entorno de staging y el porqué puede ser buena idea no usarlo",
+            "published_at": 1674002904,
+            "id": "0a70b5d0d4e74afe6502e291ed626e8c"
+        },
+        {
+            "excerpt": "Trucos y métodos para no aburrir al personal y crecerte ante los demás.",
+            "published_at": 1673397425,
+            "duration": "2797",
+            "id": "BNDv7ReKDZP2Gnrd9k/b6w92ZqMo3EMg4kO0G"
+        },
+        {
+            "excerpt": "Los masterminds quieren ver cumplidos sus deseos.",
+            "published_at": 1672969433,
+            "id": "7c26c53afc2a9d31a8c1e3f418d3147b",
+            "supercoco": "5014"
+        },
+        {
+            "title": "WRP 226. Mastermind Faisanes y Morsas: Autenticación, cursos, nombres de proyecto, SaaS, NFT y más",
+            "excerpt": "5 proyectos que te van a encantar.",
+            "published_at": 1672821686,
+            "duration": 3660124440,
+            "id": "BNDv7ReKDZP2Gnrd9k/kbrAE5NPBk4J2gjR6X"
+        },
+        {
+            "number": 225,
+            "title": "WRP 225. Mastermind Canguros: ¿En qué piensan los creadores de contenido?",
+            "excerpt": "Abel y Víctor se montan un especial.",
+            "published_at": 1672275492,
+            "id": "BNDv7ReKDZP2Gnrd9k/rEbm1jWMbGRPXRQyxY",
+            "supercoco": 3590122060
+        },
+        {
+            "excerpt": "La historia de un informático convertido en developer.",
+            "published_at": 1671581494,
+            "duration": 4211,
+            "id": "BNDv7ReKDZP2Gnrd9k/Z5aX2b6Jek3MQpoDGO"
+        },
+        {
+            "number": 223,
+            "title": "WRP 223. El día que usé gomina para el pelo (del 2022 caminando al 2023)",
+            "excerpt": "El relato de 2022 a lo \"Mario Conde\".",
+            "published_at": 1670889935,
+            "id": "BNDv7ReKDZP2Gnrd9k/d5noZO1J2w8KQ3Gy2z",
+            "supercoco": "2750"
+        },
+        {
+            "number": "222",
+            "title": "WRP 222. Todo lo que necesitas saber para ser Blockchain Developer con Fernando López",
+            "excerpt": "Las principales ventajas e inconvenientes para tener un nuevo futuro profesional entre cryptos y NFTs.",
+            "published_at": 1669765908,
+            "id": "BNDv7ReKDZP2Gnrd9k/W6ADGpkPRg6Jrl3nXR"
+        },
+        {
+            "number": "221",
+            "excerpt": "Así hice la migración de datos de un CMS a Next.js",
+            "published_at": 1669165230,
+            "id": "b636384f9c91afc1cbf50a65170f2d11",
+            "supercoco": 2714092276
+        },
+        {
+            "excerpt": "Con Javier Archeni repasamos lo bueno y malo del DX.",
+            "published_at": 1668644316,
+            "id": "5a249882308438df34c88c11c9e15777"
+        },
+        {
+            "number": 219,
+            "excerpt": "Robert, Dani y Gabri se juntan por sexta vez.",
+            "published_at": 1667950903,
+            "duration": 2621089114,
+            "id": "91ae16667b2172f10b62a4d444e8b658"
+        }
+    ]
+}

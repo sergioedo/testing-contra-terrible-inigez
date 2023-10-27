@@ -1,5 +1,6 @@
 import { expect, test } from "bun:test";
-import APIResponseMock from "./api-response-mock.json";
+// import APIResponseMock from "./api-response-mock.json";
+import APIResponseMock from "./terrible-api-response-mock.json";
 import {
   getNextEpisodeNumber,
   getTotalDuration,
