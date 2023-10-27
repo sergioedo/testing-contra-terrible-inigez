@@ -43,8 +43,9 @@ export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
 };
 
 export const getTotalDuration = (episodes: Array<IEpisode>): number => {
+  const validEpisodes = getValidEpisodes("getTotalDuration", episodes);
   // Calcular la suma total de duration
-  const totalDuration = episodes.reduce(
+  const totalDuration = validEpisodes.reduce(
     (sum, ep) => sum + parseInt(ep.duration, 10),
     0
   );

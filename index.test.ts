@@ -21,6 +21,7 @@ test("Next Episode", () => {
 
 test("Total duration", () => {
   expect(getTotalDuration(episodesMock)).toBe(153949);
+  expect(getTotalDuration(terribleEpisodesMock)).toBe(3578);
 });
 
 test("Shortest Episode", () => {
