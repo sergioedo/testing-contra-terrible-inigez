@@ -18,9 +18,20 @@ export interface ITerribleEpisode {
   supercoco?: string | number;
 }
 
+const getValidEpisodes = (context: string, episodes: Array<IEpisode>) => {
+  const validEpisodes = episodes.filter((e) => e.valid);
+  const numInvalidEpisodes = episodes.length - validEpisodes.length;
+  if (numInvalidEpisodes > 0)
+    console.error(
+      `${context}: Sr. Iñigez, se han descartado ${numInvalidEpisodes} episodios inválidos!`
+    );
+  return validEpisodes;
+};
+
 export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
+  const validEpisodes = getValidEpisodes("getNextEpisodeNumber", episodes);
   // ordenar episodios por number
-  const sortedEpisodes = episodes.toSorted(
+  const sortedEpisodes = validEpisodes.toSorted(
     (a, b) => parseInt(a.number, 10) - parseInt(b.number, 10)
   );
 
@@ -72,6 +83,9 @@ export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
     title: episode?.title || "",
     number: episode?.number?.toString() || "",
     duration: episode?.duration?.toString() || "-1",
-    valid: episode.duration !== undefined && episode.number !== undefined,
+    valid:
+      episode.duration !== undefined &&
+      episode.number !== undefined &&
+      episode.title !== undefined,
   };
 };

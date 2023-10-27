@@ -16,7 +16,7 @@ const terribleEpisodesMock = TerribleAPIResponseMock.data.map(parseEpisode);
 
 test("Next Episode", () => {
   expect(getNextEpisodeNumber(episodesMock)).toBe(267);
-  expect(getNextEpisodeNumber(terribleEpisodesMock)).toBe(262);
+  expect(getNextEpisodeNumber(terribleEpisodesMock)).toBe(263);
 });
 
 test("Total duration", () => {
@@ -87,7 +87,31 @@ test("Parse episode without duration", () => {
   expect(parseEpisode(input).valid).toBe(false);
 });
 
-test("Parse episode without duration", () => {
+test("Parse episode with duration", () => {
+  const input: ITerribleEpisode = {
+    number: "265",
+    duration: "666",
+    title:
+      "WRP 265. Una casualidad y un colega te cambian la vida profesional para siempre con Miguel Barahona",
+    excerpt: "De programador desfasado a programador actualizado y satisfecho.",
+    published_at: 1695771354,
+    id: "0497df80970acdd20bdd802251b7fa02",
+  };
+  expect(parseEpisode(input).valid).toBe(true);
+});
+
+test("Parse episode without title", () => {
+  const input: ITerribleEpisode = {
+    number: "265",
+    duration: "666",
+    excerpt: "De programador desfasado a programador actualizado y satisfecho.",
+    published_at: 1695771354,
+    id: "0497df80970acdd20bdd802251b7fa02",
+  };
+  expect(parseEpisode(input).valid).toBe(false);
+});
+
+test("Parse episode with title", () => {
   const input: ITerribleEpisode = {
     number: "265",
     duration: "666",
