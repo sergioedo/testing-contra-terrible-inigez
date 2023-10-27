@@ -20,6 +20,14 @@ export const getNextEpisodeNumber = (episodes: Array<IEpisode>) => {
   return nextEpisodeNumber;
 };
 
-export const getTotalDuration = (episodes: Array<IEpisode>) => {};
+export const getTotalDuration = (episodes: Array<IEpisode>) => {
+  // Calcular la suma total de duration
+  const totalDuration = episodes.reduce(
+    (sum, ep) => sum + parseInt(ep.duration, 10),
+    0
+  );
+  return totalDuration;
+};
+
 export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {};
 export const getTitlesBelow2Hours = (episodes: Array<IEpisode>) => {};
