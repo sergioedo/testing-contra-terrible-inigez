@@ -19,3 +19,7 @@ export const getNextEpisodeNumber = (episodes: Array<IEpisode>) => {
 
   return nextEpisodeNumber;
 };
+
+export const getTotalDuration = (episodes: Array<IEpisode>) => {};
+export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {};
+export const getTitlesBelow2Hours = (episodes: Array<IEpisode>) => {};
