@@ -29,5 +29,12 @@ export const getTotalDuration = (episodes: Array<IEpisode>) => {
   return totalDuration;
 };
 
-export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {};
+export const getShortestEpisodeNumber = (episodes: Array<IEpisode>) => {
+  // Encontrar el episode más corto
+  const shortestEpisode = episodes.reduce(
+    (shortest, ep) => (ep.duration < shortest.duration ? ep : shortest),
+    episodes[0]
+  );
+  return parseInt(shortestEpisode.number);
+};
 export const getTitlesBelow2Hours = (episodes: Array<IEpisode>) => {};
