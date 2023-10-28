@@ -3,7 +3,7 @@ export interface IEpisode {
   title: string;
   excerpt: string;
   published_at: number;
-  duration: string;
+  duration: number;
   id: string;
   valid: boolean;
 }
@@ -43,10 +43,7 @@ export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
 export const getTotalDuration = (episodes: Array<IEpisode>): number => {
   const validEpisodes = getValidEpisodes("getTotalDuration", episodes);
   // Calcular la suma total de duration
-  const totalDuration = validEpisodes.reduce(
-    (sum, ep) => sum + parseInt(ep.duration, 10),
-    0
-  );
+  const totalDuration = validEpisodes.reduce((sum, ep) => sum + ep.duration, 0);
   return totalDuration;
 };
 
@@ -54,10 +51,7 @@ export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
   const validEpisodes = getValidEpisodes("getTotalDuration", episodes);
   // Encontrar el episode más corto
   const shortestEpisode = validEpisodes.reduce(
-    (shortest, ep) =>
-      parseInt(ep.duration, 10) < parseInt(shortest.duration, 10)
-        ? ep
-        : shortest,
+    (shortest, ep) => (ep.duration < shortest.duration ? ep : shortest),
     episodes[0]
   );
   return shortestEpisode.number;
@@ -74,8 +68,8 @@ export const getTitlesBelow2Hours = (
   let durationSum = 0;
   const selectedTitles: string[] = [];
   for (const ep of shuffledEpisodes) {
-    if (durationSum + parseInt(ep.duration, 10) <= twoHourLimit) {
-      durationSum += parseInt(ep.duration);
+    if (durationSum + ep.duration <= twoHourLimit) {
+      durationSum += ep.duration;
       selectedTitles.push(ep.title);
     }
   }
@@ -87,7 +81,7 @@ export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
     ...episode,
     title: episode?.title || "",
     number: parseInt(episode?.number?.toString() || "-1", 10),
-    duration: episode?.duration?.toString() || "-1",
+    duration: parseInt(episode?.duration?.toString() || "-1", 10),
     valid:
       episode.duration !== undefined &&
       episode.number !== undefined &&

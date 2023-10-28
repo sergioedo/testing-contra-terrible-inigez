@@ -35,7 +35,7 @@ test("Titles < 2 hours", () => {
   expect(titlesBelow2H.length).toBeGreaterThan(0);
   const totalDuration = episodesMock
     .filter((e) => titlesBelow2H.includes(e.title))
-    .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
+    .reduce((prev, curr, currIdx) => prev + curr.duration, 0);
   expect(totalDuration).toBeLessThan(2 * HOUR_IN_SECONDS);
 
   const terribleTitlesBelow2H: Array<string> =
@@ -43,7 +43,7 @@ test("Titles < 2 hours", () => {
   expect(terribleTitlesBelow2H.length).toBeGreaterThan(0);
   const totalDurationTerrible = terribleEpisodesMock
     .filter((e) => terribleTitlesBelow2H.includes(e.title))
-    .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
+    .reduce((prev, curr, currIdx) => prev + curr.duration, 0);
   expect(totalDurationTerrible).toBeLessThan(2 * HOUR_IN_SECONDS);
 });
 
