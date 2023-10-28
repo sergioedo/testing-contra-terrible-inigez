@@ -37,6 +37,14 @@ test("Titles < 2 hours", () => {
     .filter((e) => titlesBelow2H.includes(e.title))
     .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
   expect(totalDuration).toBeLessThan(2 * HOUR_IN_SECONDS);
+
+  const terribleTitlesBelow2H: Array<string> =
+    getTitlesBelow2Hours(terribleEpisodesMock);
+  expect(terribleTitlesBelow2H.length).toBeGreaterThan(0);
+  const totalDurationTerrible = terribleEpisodesMock
+    .filter((e) => terribleTitlesBelow2H.includes(e.title))
+    .reduce((prev, curr, currIdx) => prev + parseInt(curr.duration), 0);
+  expect(totalDurationTerrible).toBeLessThan(2 * HOUR_IN_SECONDS);
 });
 
 test("Parse episode with number as number", () => {

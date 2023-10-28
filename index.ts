@@ -68,8 +68,10 @@ export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
 export const getTitlesBelow2Hours = (
   episodes: Array<IEpisode>
 ): Array<string> => {
+  const validEpisodes = getValidEpisodes("getTotalDuration", episodes);
+
   // Crear una lista aleatoria y seleccionar titles de episodios que sumen menos de 2 horas
-  const shuffledEpisodes = episodes.toSorted(() => Math.random() - 0.5);
+  const shuffledEpisodes = validEpisodes.toSorted(() => Math.random() - 0.5);
   const twoHourLimit = 2 * 60 * 60; // 2 horas en segundos
   let durationSum = 0;
   const selectedTitles: string[] = [];
