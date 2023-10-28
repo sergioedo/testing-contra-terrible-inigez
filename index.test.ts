@@ -57,7 +57,7 @@ test("Parse episode with number as number", () => {
     published_at: 1695771354,
     id: "0497df80970acdd20bdd802251b7fa02",
   };
-  expect(parseEpisode(input).number).toBe("265");
+  expect(parseEpisode(input).number).toBe(input.number);
 });
 
 test("Parse episode with number as string", () => {
@@ -70,7 +70,7 @@ test("Parse episode with number as string", () => {
     published_at: 1695771354,
     id: "0497df80970acdd20bdd802251b7fa02",
   };
-  expect(parseEpisode(input).number).toBe(input.number);
+  expect(parseEpisode(input).number).toBe(265);
 });
 
 test("Parse episode without number", () => {

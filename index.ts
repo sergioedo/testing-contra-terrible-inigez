@@ -1,5 +1,5 @@
 export interface IEpisode {
-  number: string;
+  number: number;
   title: string;
   excerpt: string;
   published_at: number;
@@ -31,13 +31,11 @@ const getValidEpisodes = (context: string, episodes: Array<IEpisode>) => {
 export const getNextEpisodeNumber = (episodes: Array<IEpisode>): number => {
   const validEpisodes = getValidEpisodes("getNextEpisodeNumber", episodes);
   // ordenar episodios por number
-  const sortedEpisodes = validEpisodes.toSorted(
-    (a, b) => parseInt(a.number, 10) - parseInt(b.number, 10)
-  );
+  const sortedEpisodes = validEpisodes.toSorted((a, b) => a.number - b.number);
 
   // Calcular el siguiente episode number
   const nextEpisodeNumber =
-    parseInt(sortedEpisodes[sortedEpisodes.length - 1].number, 10) + 1;
+    sortedEpisodes[sortedEpisodes.length - 1].number + 1;
 
   return nextEpisodeNumber;
 };
@@ -62,7 +60,7 @@ export const getShortestEpisodeNumber = (episodes: Array<IEpisode>): number => {
         : shortest,
     episodes[0]
   );
-  return parseInt(shortestEpisode.number);
+  return shortestEpisode.number;
 };
 
 export const getTitlesBelow2Hours = (
@@ -88,7 +86,7 @@ export const parseEpisode = (episode: ITerribleEpisode): IEpisode => {
   return {
     ...episode,
     title: episode?.title || "",
-    number: episode?.number?.toString() || "",
+    number: parseInt(episode?.number?.toString() || "-1", 10),
     duration: episode?.duration?.toString() || "-1",
     valid:
       episode.duration !== undefined &&
