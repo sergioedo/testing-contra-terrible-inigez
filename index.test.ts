@@ -9,7 +9,6 @@ import {
   parseEpisode,
   ITerribleEpisode,
 } from "./index";
-import { parse } from "url";
 
 const episodesMock = APIResponseMock.data.map(parseEpisode);
 const terribleEpisodesMock = TerribleAPIResponseMock.data.map(parseEpisode);
